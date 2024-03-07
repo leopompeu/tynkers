@@ -1,0 +1,81 @@
+.cursos-background{
+    background-image: url(../../../../public/images/aula-background.webp);
+    background-size: cover;
+    width: 98.8vw;
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+    margin-top: -35.75%;
+}
+
+.title-cursos{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 2px 2px 0px #000;
+    font-family: Poppins;
+    font-size: 3em;
+    width: 50%;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 114%; /* 72.96px */
+    margin-top: 5%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.div-cursos{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 5%;
+}
+
+.div-row-cursos{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-row-cursos button:hover{
+    transition: all ease .2s;
+    background-color: #ff61ef;
+}
+
+.item-cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 5%;
+    width: 300px;
+    height: 393px;
+    border-radius: 34px;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px 0px #000;
+}
+
+.robotica{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.84) 100%), url(../../../../public/images/robotica.jpg), lightgray -350.772px 0px / 209.551% 100% no-repeat;
+    background-position-x: 65%;
+}
+
+.title-item-curso{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000;
+    font-family: Poppins;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 114%; /* 38.76px */
+    margin-bottom: 2.5%;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}

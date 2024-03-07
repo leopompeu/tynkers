@@ -1,0 +1,71 @@
+.div-aluno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.header-div{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 7.5px 45px 7.5px 45px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 6.7px 0px rgba(0, 0, 0, 0.17);
+    z-index: -1;
+
+}
+
+.image-logo-header{
+    width: 15%;
+    transition: all ease .2s;
+}
+
+.image-logo-header:hover{
+    transition: all ease .2s;
+    transform: scale(1.1);
+}
+
+.div-links-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    width: 30%;
+    font-weight: 600;
+    font-size: 1.10em;
+}
+
+.link-header{
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.link-header:hover {
+    transition: all ease .2s;
+    color: #00000099;
+}
+
+.div-buttons-header{
+    display: flex;
+    gap: 25px;
+}
+
+.button-aluno{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all ease .2s;
+    font-size: 1.10em;
+    z-index: 10;
+
+}
+
+.button-aluno:hover{
+    transform: scale(1.15);
+    transition: all ease .2s;
+}

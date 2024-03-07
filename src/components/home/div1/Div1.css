@@ -1,0 +1,52 @@
+.div1-background{
+    display: flex;
+    width: 98.8vw;
+    height: 80vh;
+    background-image: url(../../../../public/images/background1.webp);
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center;
+    margin-top: -5%;
+    justify-content: center;
+    align-items: center
+}
+
+.div-text-div1{
+    margin-right: -25%;
+}
+
+.firts-text-div1{
+    color: #9038FF;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 114%; /* 45.6px */
+    letter-spacing: 3.2px;
+    font-size: 2em;
+}
+
+.title-div1{
+    width: 55%;
+    font-size: 3.5em;
+    font-weight: 800;
+    line-height: 114%;
+}
+
+.subtitle-div1{
+    margin-top: 2.5%;
+    width: 52%;
+    color: #2C2C2C;
+    font-family: Poppins;
+    font-size: 1.1em;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 2%;
+}
+
+.div-buttons-div1{
+    display: flex;
+    gap: 15px;
+}
+
+.image-div1{
+    width: 50%;
+}

@@ -1,0 +1,13 @@
+.botao-whatsapp{
+    position:fixed;
+	bottom:40px;
+	right:40px;
+    z-index:100;    
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.botao-whatsapp:hover{
+    transition: all ease .2s;
+    transform: scale(1.2);
+}
