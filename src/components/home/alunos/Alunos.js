@@ -1,9 +1,13 @@
-import ReactPlayer from 'react-player';
+'use client'
+
 import './Alunos.css'
 import Image from 'next/image';
 import Player from '../../global-components/player/Player'
+import { useRouter } from 'next/navigation';
 
 function Aluno() {
+
+    const router = useRouter();
 
     return(
         <div className="aluno-background">
@@ -40,6 +44,7 @@ function Aluno() {
                             width={50}
                             height={50}
                             loading='lazy'
+                            onClick={() => {router.push('https://www.facebook.com/tynkerspg')}}
                             className='image-social-media'
                             alt='Botão para o facebook da Escola de técnologia Tynkers'
                         />
@@ -48,6 +53,7 @@ function Aluno() {
                             width={50}
                             height={50}
                             loading='lazy'
+                            onClick={() => {router.push('https://instagram.com/tynkerspg')}}
                             className='image-social-media'
                             alt='Botão para o instagram da Escola de técnologia Tynkers'
                         />
@@ -56,6 +62,7 @@ function Aluno() {
                             width={50}
                             height={50}
                             loading='lazy'
+                            onClick={() => {router.push('/blog')}}
                             className='image-social-media'
                             alt='Botão para o tiktok da Escola de técnologia Tynkers'
                         />
@@ -140,7 +147,7 @@ function Aluno() {
                             />
                         </div>
                     </div>
-                    <button style={{marginTop: '2.5%'}} className='button-type-2'>SIGA AS NOSSAS REDES SOCIAS!</button>
+                    <button style={{marginTop: '2.5%'}} onClick={() => {router.push('https://instagram.com/tynkerspg')}} className='button-type-2'>SIGA AS NOSSAS REDES SOCIAS!</button>
                 </div>
             </div>
         </div>

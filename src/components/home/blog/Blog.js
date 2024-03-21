@@ -1,7 +1,12 @@
+'use client'
+
+import { useRouter } from 'next/navigation';
 import './Blog.css'
 import Image from 'next/image';
 
 function Blog() {
+
+    const router = useRouter();
 
     const imageStyle = {
         borderRadius: '20px 20px 0 0',
@@ -57,7 +62,7 @@ function Blog() {
                     </div>
                 </div>
             </div>
-            <button className='button-type-2' style={{marginTop: '5%', width: '15%'}}>VEJA MAIS!</button>
+            <button className='button-type-2' onClick={() => {router.push('/blog')}} style={{marginTop: '5%', width: '15%'}}>VEJA MAIS!</button>
         </div>
     )
 }
