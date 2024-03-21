@@ -1,0 +1,32 @@
+.conteudo-background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.title-conteudo{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 2px 2px 0px #000;
+    font-family: Poppins;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 114%; /* 72.96px */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.text-conteudo{
+    margin-top: 5%;
+    width: 60%;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 114%; /* 72.96px */
+}

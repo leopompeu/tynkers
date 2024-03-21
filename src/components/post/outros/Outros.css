@@ -1,0 +1,95 @@
+.outros-background{
+    background-image: url(../../../../public/images/metodologia-background.webp);
+    width: 98.8vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -5%;
+}
+
+.title-outros{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 3px 3px 0px #000;
+    font-family: Poppins;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 800;
+    margin-top: -12.5%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin-top: 1%;
+}
+
+.div-posts-home{
+    width: 70%;
+    display: flex;
+    gap: 20px;
+}
+
+.card-post-home{
+    width: 90%;
+    height: 85%;
+    margin-top: 5%;
+    border-radius: 20px;
+    background:#FFF;
+    box-shadow: 0px 0px 9.8px 5px rgba(0, 0, 0, 0.34);
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.card-post-home:hover{
+    background-color: aqua;
+    transition: all ease .2s;
+}
+
+.title-card-post-home{
+    color: #00D96C;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000;
+    font-family: Poppins;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 0;
+    letter-spacing: -0.48px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    line-height: 30px; /* 120.833% */
+    margin-top: 2%;
+
+}
+
+.text-card-post-home{
+    color: #000;
+    font-family: Poppins;
+    font-size: 0.6em;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 2%;
+
+}
+
+.button-card-post{
+    color: #000;
+    font-family: Poppins;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 125% */
+    letter-spacing: -0.3px;
+    text-align: end;
+    cursor: pointer;
+    margin-top: 2%;
+
+}
+
+.div-text-card-post-home{
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

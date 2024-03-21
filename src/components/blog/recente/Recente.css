@@ -1,0 +1,99 @@
+.recente-background{
+    background-image: url(../../../../public/images/metodologia-background.webp);
+    width: 98.8vw;
+    height: 150vh;
+    background-repeat: no-repeat;
+    margin-top: -9%;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20%;
+}
+
+.title-recente{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 3px 3px 0px #000;
+    font-family: Poppins;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 800;
+    margin-top: -12.5%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.div-recente-infos{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    margin-top: -10%;
+}
+
+.text-recente{
+    color: #FFF;
+    text-shadow: 2px 2px 0px #000;
+    font-family: Poppins;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.39px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.subtitle-recente{
+    color: #FFF;
+    text-shadow: 2px 2px 0px #000;
+    font-family: Poppins;
+    font-size: 2em;
+    font-style: normal;
+    text-align: start;
+    font-weight: 800;
+    line-height: 114%; /* 54.72px */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.text-cursos-recente{
+    color: #FFF;
+    text-align: start;
+    text-shadow: 2px 2px 0px #000;
+    font-family: Poppins;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32.5px; /* 125% */
+    letter-spacing: -0.39px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.button-recente{
+    border-radius: 13px;
+    border: 2px solid #000;
+    padding: 7.5px 12.5px 7.5px 12.5px;
+    box-shadow: 2px 2px 0px 0px #000;
+    transition: all ease .2s;
+    color: #FFF;
+    background: #00D96C;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000;
+    font-family: Poppins;
+    font-size: 1.3em;
+    font-style: normal;
+    font-weight: 800;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    line-height: 114%; /* 27.36px */
+}
+
+.button-recente:hover{
+    transition: all ease .2s;
+    background: #45f79e;
+}

@@ -1,0 +1,84 @@
+.aluno-background{
+    display: flex;
+    flex-direction: column;
+    width: 98.8vw;
+    height: 130vh;
+    padding-top: 10%;
+}
+
+.title-aluno{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 2px 2px 0px #000;
+    font-family: Poppins;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 114%; /* 72.96px */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.text-social-media{
+    color: #000;
+    text-align: start;
+    font-family: Poppins;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    width: 75%;
+    line-height: 20px; /* 125% */
+    letter-spacing: -0.39px;
+    white-space: pre-wrap;
+}
+
+.div-alunos{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image-social-media{
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.image-social-media:hover{
+    transition: all ease .2s;
+    transform: scale(1.2);
+}
+
+.post-social-media{
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.post-social-media:hover{
+    transition: all ease .2s;
+    transform: scale(1.05);
+}
+
+.cellphone-mask{
+    background-image: url(../../../../public/images/cellphone-mask.webp);
+    height: 100%;
+    width: 231px;
+    overflow: hidden;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.button-video{
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.button-video:hover{
+    transition: all ease .2s;
+    transform: scale(1.2);
+}
+
+.video{
+    border-radius: 20px;
+}

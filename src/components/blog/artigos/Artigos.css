@@ -1,0 +1,96 @@
+.blog-background{
+    width: 100vw;
+    height: 225vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+    background-image: url('../../../../public/images/background-blog.webp');
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center;
+    margin-top: -13%;
+}
+
+.title-blog-home{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 2px 2px 0px #000;
+    font-family: Poppins;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 800;
+    margin-top: 5%;
+    line-height: 114%; /* 72.96px */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.div-posts-home{
+    width: 85%;
+    display: flex;
+    gap: 20px;
+}
+
+.card-post-home{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 9.8px 5px rgba(0, 0, 0, 0.34);
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.card-post-home:hover{
+    background-color: aqua;
+    transition: all ease .2s;
+}
+
+.title-card-post-home{
+    color: #00D96C;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000;
+    font-family: Poppins;
+    font-size: 1.8em;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    line-height: 30px; /* 120.833% */
+    margin-top: 5%;
+
+}
+
+.text-card-post-home{
+    color: #000;
+    font-family: Poppins;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 5%;
+
+}
+
+.button-card-post{
+    color: #000;
+    font-family: Poppins;
+    font-size: 0.8em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px; /* 125% */
+    letter-spacing: -0.3px;
+    text-align: end;
+    cursor: pointer;
+    margin-top: 5%;
+
+}
+
+.div-text-card-post-home{
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
