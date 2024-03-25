@@ -1,7 +1,25 @@
+'use client'
+
+import { useEffect, useState } from 'react';
 import './Contato.css'
 import Image from 'next/image';
 
 function Contato() {
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [whatsapp, setWhatsapp] = useState('');
+    const [Mensagem, setMensagem] = useState('');
+    const [csvData, setCsvData] = useState([]);
+
+    function Submit(e){
+        const form = document.getElementById("form-data");
+        e.preventDefault();
+        const formData = new FormData(form);
+        fetch("https://script.google.com/macros/s/AKfycbyjClvBr84UrPU8cby4jbDh7MO2DhYOod5OWjTUZU-6qLvtXHFRwafwqpOsTDF49UEr/exec", {
+            method: 'POST',
+            body: formData
+        }).then(res => res.json()).then(res => console.log(res))
+    }
 
     return(
         <div className="contato-background">
@@ -16,13 +34,13 @@ function Contato() {
                 />
                 <div className='div-form-contato-home'>
                     <p className='text-form-contato-home'>Nossa equipe te responderá assim que possível! Agradecemos o contato!</p>
-                    <form className='form-contato-home'>
+                    <form className='form-contato-home' id='form-data' onSubmit={(e) => {Submit(e)}}>
                         <label className='label-contato-home'>Nome</label>
-                        <input className='input-contato-home' style={{marginBottom: '2.5%'}}/>
+                        <input className='input-contato-home' value={nome} onChange={(e) => {setNome(e.target.value)}} style={{marginBottom: '2.5%'}}/>
                         <label className='label-contato-home'>Email</label>
-                        <input className='input-contato-home' style={{marginBottom: '2.5%'}}/>
+                        <input className='input-contato-home' value={email} onChange={(e) => {setEmail(e.target.value)}} style={{marginBottom: '2.5%'}}/>
                         <label className='label-contato-home'>Whatsapp</label>
-                        <input className='input-contato-home' style={{marginBottom: '2.5%'}}/>
+                        <input className='input-contato-home' value={whatsapp} onChange={(e) => {setWhatsapp(e.target.value)}} style={{marginBottom: '2.5%'}}/>
                         <label className='label-contato-home'>Mesagem (opcional)</label>
                         <textarea className='textarea-contato-home'/>
                         <button className='button-type-1' type='submit' name='Botão de envio de formulário' style={{marginTop: '5%', width: '60%'}}>ENVIAR!</button>

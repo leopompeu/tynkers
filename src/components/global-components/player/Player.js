@@ -9,7 +9,7 @@ export default class Player extends React.Component {
                     width="180px"
                     height="445px"
                     style={{marginLeft: '13px'}}
-                    url={'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'}
+                    url={'https://youtube.com/shorts/IpDJ8hFgxlU'}
                     controls={true}
                     playing={true}
                     light={true}
