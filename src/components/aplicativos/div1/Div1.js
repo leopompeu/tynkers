@@ -4,8 +4,9 @@ function Div1() {
 
     return(
         <div className='background-div1'>
-            <h2 className='title-div1'>Desenvolvimento de aplicativos</h2>
-            <p className='text-div1'>Proporcione para seu filho(a) um aprendizado de programação, robótica e cultura <span style={{fontStyle: 'italic'}}>maker</span>.</p>
+            <h2 className='title-div1'>Apps</h2>
+            <p className='text-div1'>Desenvolvendo aplicativos com
+programação em bloco</p>
             <button className='button-type-3' style={{backgroundColor: '#00D96C'}}>Agende sua aula!</button>
         </div>
     )

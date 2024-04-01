@@ -28,24 +28,24 @@ function Aluno() {
         const { data } = await axios.get(url);
 
         feedList.push(data.data)
-        console.log(feedList)
-        setImage1(feedList[0][0].media_url)
-        setImage2(feedList[0][1].media_url)
-        setImage3(feedList[0][2].media_url)
-        setImage4(feedList[0][3].media_url)
-        setImage5(feedList[0][4].media_url)
-        setImage6(feedList[0][5].media_url)
-        setImage7(feedList[0][6].media_url)
-        setImage8(feedList[0][7].media_url)
-        setImage9(feedList[0][8].media_url)
-
+        console.log(feedList[0][0])
+        setImage1(feedList[0][0].media_type == 'IMAGE' ? feedList[0][0].media_url : '/images/placeholder-ig.webp')
+        setImage2(feedList[0][1].media_type == 'IMAGE' ? feedList[0][1].media_url : '/images/placeholder-ig.webp')
+        setImage3(feedList[0][2].media_type == 'IMAGE' ? feedList[0][2].media_url : '/images/placeholder-ig.webp')
+        setImage4(feedList[0][3].media_type == 'IMAGE' ? feedList[0][3].media_url : '/images/placeholder-ig.webp')
+        setImage5(feedList[0][4].media_type == 'IMAGE' ? feedList[0][4].media_url : '/images/placeholder-ig.webp')
+        setImage6(feedList[0][5].media_type == 'IMAGE' ? feedList[0][5].media_url : '/images/placeholder-ig.webp')
+        setImage7(feedList[0][6].media_type == 'IMAGE' ? feedList[0][6].media_url : '/images/placeholder-ig.webp')
+        setImage8(feedList[0][7].media_type == 'IMAGE' ? feedList[0][7].media_url : '/images/placeholder-ig.webp')
+        setImage9(feedList[0][8].media_type == 'IMAGE' ? feedList[0][8].media_url : '/images/placeholder-ig.webp')
     }
 
     useEffect(() => {
         getInstaFeed()
     }, [])
 
-    if (feedList != undefined) {
+
+    if (image3 != undefined) {
         return (
             <div className="aluno-background">
                 <h2 className='title-aluno'>NOSSOS <span style={{ color: '#00D96C' }}>ALUNOS</span></h2>

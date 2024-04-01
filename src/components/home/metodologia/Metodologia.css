@@ -71,3 +71,35 @@
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
 }
+
+.item-cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 5%;
+    width: 300px;
+    height: 393px;
+    border-radius: 34px;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0px 0px #000;
+}
+
+.robotica{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.84) 100%), url(../../../../public/images/robotica.jpg), lightgray -350.772px 0px / 209.551% 100% no-repeat;
+    background-position-x: 65%;
+}
+
+.title-item-curso{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000;
+    font-family: Poppins;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 114%; /* 38.76px */
+    margin-bottom: 2.5%;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+}

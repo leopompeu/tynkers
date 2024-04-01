@@ -12,7 +12,7 @@ export default function Blog() {
       <div className="flex min-h-screen flex-col items-center justify-between p-24">
         <Div1/>
         <Conteudo/>
-        <Post/>
+        {/* <Post/> */}
       </div>
       <Whatsapp/>
       <Footer/>

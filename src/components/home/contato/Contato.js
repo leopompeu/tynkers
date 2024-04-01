@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import './Contato.css'
 import Image from 'next/image';
+import ReactInputMask from 'react-input-mask';
 
 function Contato() {
     const [nome, setNome] = useState('');
@@ -38,9 +39,9 @@ function Contato() {
                         <label className='label-contato-home'>Nome</label>
                         <input className='input-contato-home' value={nome} onChange={(e) => {setNome(e.target.value)}} style={{marginBottom: '2.5%'}}/>
                         <label className='label-contato-home'>Email</label>
-                        <input className='input-contato-home' value={email} onChange={(e) => {setEmail(e.target.value)}} style={{marginBottom: '2.5%'}}/>
+                        <input className='input-contato-home' type='email' value={email} onChange={(e) => {setEmail(e.target.value)}} style={{marginBottom: '2.5%'}}/>
                         <label className='label-contato-home'>Whatsapp</label>
-                        <input className='input-contato-home' value={whatsapp} onChange={(e) => {setWhatsapp(e.target.value)}} style={{marginBottom: '2.5%'}}/>
+                        <ReactInputMask className='input-contato-home' mask={'(99) 99999-9999'} maskChar='' value={whatsapp} onChange={(e) => {setWhatsapp(e.target.value)}} style={{marginBottom: '2.5%'}}/>
                         <label className='label-contato-home'>Mesagem (opcional)</label>
                         <textarea className='textarea-contato-home'/>
                         <button className='button-type-1' type='submit' name='Botão de envio de formulário' style={{marginTop: '5%', width: '60%'}}>ENVIAR!</button>

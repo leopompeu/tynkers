@@ -1,7 +1,11 @@
+'use client'
+
+import { useRouter } from 'next/navigation';
 import './Recente.css'
 import Image from 'next/image';
 
 function Recente() {
+    const router = useRouter
 
     return(
         <div className="recente-background">
@@ -22,7 +26,7 @@ function Recente() {
                     <p className='text-cursos-recente' style={{width: '80%'}}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris maximus a orci eu ullamcorper. Nulla a aliquam nisl. Curabitur mattis tempus rhoncus. Nam id odio quis dolor blandit condimentum. Nullam vestibulum leo eget nibh vehicula, ut rhoncus mauris ultricies. Sed semper turpis et nisi sagittis, ac eleifend justo cons...
                     </p>
-                    <button className='button-recente' name='Botão de para ler o post mais recente' style={{height: '15%', width: '40%'}}>AGENDE AGORA!</button>
+                    <button className='button-recente' onClick={() => {router.push('https://api.whatsapp.com/send?phone=5513991452353&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20gratuita!%20')}} name='Botão de agendar aulas'>AGENDE AGORA!</button>
                 </div>
             </div>
         </div>

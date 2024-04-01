@@ -15,57 +15,10 @@ function Artigos() {
     return(
         <div className="blog-background">
             <h2 className='title-blog-home'>NAVEGUE PELOS NOSSOS <span style={{color: '#00D96C'}}>ARTIGOS</span></h2>
-            <div className='div-posts-home'>
-                <div className='card-post-home'>
-                    <Image
-                        src="/images/placeholder-blog.webp"
-                        style={imageStyle}
-                        width={450}
-                        height={200}
-                        loading='lazy'
-                        alt='Alunos da escola de tecnologia Tynkers'
-                    />
-                    <div className='div-text-card-post-home'>
-                        <h3 className='title-card-post-home'>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</h3>
-                        <p className='text-card-post-home'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit justo eros, a iaculis est aliquam ac. Vivamus consectetur facilisis tortor eu posuere.</p>
-                        <p className='button-card-post'>Saiba mais →</p>
-                    </div>
-                </div>
-                <div className='card-post-home'>
-                    <Image
-                        src="/images/placeholder-blog.webp"
-                        style={imageStyle}
-                        width={450}
-                        height={200}
-                        loading='lazy'
-                        alt='Alunos da escola de tecnologia Tynkers'
-                    />
-                    <div className='div-text-card-post-home'>
-                        <h3 className='title-card-post-home'>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</h3>
-                        <p className='text-card-post-home'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit justo eros, a iaculis est aliquam ac. Vivamus consectetur facilisis tortor eu posuere.</p>
-                        <p className='button-card-post'>Saiba mais →</p>
-                    </div>
-                </div>
-                <div className='card-post-home'>
-                    <Image
-                        src="/images/placeholder-blog.webp"
-                        style={imageStyle}
-                        width={450}
-                        height={200}
-                        loading='lazy'
-                        alt='Alunos da escola de tecnologia Tynkers'
-                    />
-                    <div className='div-text-card-post-home'>
-                        <h3 className='title-card-post-home'>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</h3>
-                        <p className='text-card-post-home'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit justo eros, a iaculis est aliquam ac. Vivamus consectetur facilisis tortor eu posuere.</p>
-                        <p className='button-card-post'>Saiba mais →</p>
-                    </div>
-                </div>
-            </div>
             <div className='div-posts-home' style={{marginTop: '2.5%'}}>
-                <div className='card-post-home'>
+                <div className='card-post-home' onClick={() => router.push('/post')}>
                     <Image
-                        src="/images/placeholder-blog.webp"
+                        src="https://images.unsplash.com/photo-1602377569011-e31152bc3a69?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=3600"
                         style={imageStyle}
                         width={450}
                         height={200}
@@ -73,38 +26,8 @@ function Artigos() {
                         alt='Alunos da escola de tecnologia Tynkers'
                     />
                     <div className='div-text-card-post-home'>
-                        <h3 className='title-card-post-home'>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</h3>
-                        <p className='text-card-post-home'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit justo eros, a iaculis est aliquam ac. Vivamus consectetur facilisis tortor eu posuere.</p>
-                        <p className='button-card-post'>Saiba mais →</p>
-                    </div>
-                </div>
-                <div className='card-post-home'>
-                    <Image
-                        src="/images/placeholder-blog.webp"
-                        style={imageStyle}
-                        width={450}
-                        height={200}
-                        loading='lazy'
-                        alt='Alunos da escola de tecnologia Tynkers'
-                    />
-                    <div className='div-text-card-post-home'>
-                        <h3 className='title-card-post-home'>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</h3>
-                        <p className='text-card-post-home'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit justo eros, a iaculis est aliquam ac. Vivamus consectetur facilisis tortor eu posuere.</p>
-                        <p className='button-card-post'>Saiba mais →</p>
-                    </div>
-                </div>
-                <div className='card-post-home'>
-                    <Image
-                        src="/images/placeholder-blog.webp"
-                        style={imageStyle}
-                        width={450}
-                        height={200}
-                        loading='lazy'
-                        alt='Alunos da escola de tecnologia Tynkers'
-                    />
-                    <div className='div-text-card-post-home'>
-                        <h3 className='title-card-post-home'>TEXTO TEXTO TEXTO TEXTO TEXTO TEXTO</h3>
-                        <p className='text-card-post-home'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit justo eros, a iaculis est aliquam ac. Vivamus consectetur facilisis tortor eu posuere.</p>
+                        <h3 className='title-card-post-home'>Tynkoins</h3>
+                        <p className='text-card-post-home'>O conteúdo pode mudar de acordo com o post, portanto, imagens e afins podem  ser dispostos da maneira com a qual a equipe achar necessário, bem como possível no Notion (plataforma a ser utilizada para os posts). </p>
                         <p className='button-card-post'>Saiba mais →</p>
                     </div>
                 </div>

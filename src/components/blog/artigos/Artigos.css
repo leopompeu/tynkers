@@ -1,6 +1,6 @@
 .blog-background{
     width: 100vw;
-    height: 225vh;
+    height: 155vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-clip: content-box;
     background-position: center;
-    margin-top: -13%;
+    margin-top: -12%;
 }
 
 .title-blog-home{
@@ -29,11 +29,12 @@
 .div-posts-home{
     width: 85%;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
 .card-post-home{
-    width: 100%;
+    width: 40%;
     height: 100%;
     margin-top: 5%;
     border-radius: 20px;

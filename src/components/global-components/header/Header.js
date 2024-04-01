@@ -1,7 +1,13 @@
+'use client'
+
 import Image from "next/image";
 import './Header.css'
+import { useRouter } from "next/navigation";
 
 function Header() {
+
+    const router = useRouter();
+
     return (
         <header >
             <nav className="header-div">
@@ -19,16 +25,7 @@ function Header() {
                     <a href="/blog" className="link-header">Blog</a>
                 </div>
                 <div className="div-buttons-header">
-                    <button className="button-type-1" name="Botão de para agendar uma aula">Agende uma aula!</button>
-                    <div className="button-aluno">
-                        <Image
-                            src="/images/user-icon.webp"
-                            width={20}
-                            height={10}
-                            alt="Ícone de usuário"
-                        />
-                        <p>Já sou aluno</p>
-                    </div>
+                    <button className="button-type-1" onClick={() => {router.push('https://api.whatsapp.com/send?phone=5513991452353&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20aula%20experimental%20gratuita!%20')}} name="Botão de para agendar uma aula">Agende uma aula!</button>
                 </div>
             </nav>
         </header>
